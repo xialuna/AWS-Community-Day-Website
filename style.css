@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1;
+  font-weight: 400;
+  color: #232f3e;
+}
+
+.header {
+  height: 8.3rem;
+  background-color: #fff9d6;
+  padding: 0 4.8rem;
+}
