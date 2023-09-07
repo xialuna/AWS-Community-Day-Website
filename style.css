@@ -16,6 +16,13 @@ body {
   color: #232f3e;
 }
 /* REUSABLE COMPONENTS */
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 6rem 3.2rem !important;
+  margin: 0 auto;
+}
+
 .btn {
   text-decoration: none;
   display: inline-block;
@@ -28,6 +35,10 @@ body {
   padding: 1.6rem 2.1rem;
 }
 
+.btn.pad-m {
+  padding: 1rem 1.5rem;
+}
+
 .btn-primary:link,
 .btn-primary:visited {
   background-color: #febd69;
@@ -37,6 +48,7 @@ body {
 
 .btn-primary:hover,
 .btn-primary:active {
+  color: #55565a;
   background-color: #ffa400;
   box-shadow: none;
 }
@@ -52,6 +64,30 @@ body {
 .btn-second:active {
   background-color: #232f3f;
   box-shadow: inset 0 0 0 0.2rem white;
+}
+
+.heading-primary {
+  text-align: center;
+  font-weight: 700;
+  padding-bottom: 3rem;
+}
+
+.heading-secondary {
+  display: block;
+  color: #ffa400;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 15rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /* NAVIGATION */
@@ -105,4 +141,89 @@ body {
 .hero-btn {
   display: flex;
   gap: 1.5rem;
+}
+
+/* CURRENT EVENTS */
+.section-current-events {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.current-event-box {
+  max-width: 90rem;
+  margin-top: 4rem;
+  border: 0.2rem solid #d6d6d6;
+  border-radius: 7px;
+  box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.18);
+}
+
+.event-content-box {
+  margin-left: 4.7rem;
+}
+.event-heading {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 4.5rem 0 2.1rem 0;
+  margin-bottom: 2rem;
+  border-bottom: 0.5px solid #bec8d5;
+}
+
+.event-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.event-date > .day {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.event-date > .month {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.event-title {
+  font-size: 2.2rem;
+}
+
+.event-place {
+  display: block;
+  font-size: 2rem;
+}
+
+.event-loc {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  color: #6c84a0;
+  margin: 0 0 2.8rem 0.2rem;
+}
+
+.loc-icon {
+  height: 2.3rem;
+  width: 2.3rem;
+}
+.loc-address {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.event-descrip {
+  color: #37475a;
+  line-height: 1.3;
+}
+
+.event-btn {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin: 3.8rem 0 4.6rem 0;
+}
+
+.event-img-box {
+  background-color: #37475a;
 }
