@@ -43,12 +43,12 @@ body {
 .btn-primary:visited {
   background-color: #febd69;
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.11);
-  color: #37475a;
+  color: #232f3e;
 }
 
 .btn-primary:hover,
 .btn-primary:active {
-  color: #55565a;
+  color: #232f3e;
   background-color: #ffa400;
   box-shadow: none;
 }
@@ -84,6 +84,11 @@ body {
   display: grid;
   column-gap: 6.4rem;
   row-gap: 15rem;
+}
+
+.grid--1-cols {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .grid--2-cols {
@@ -153,7 +158,7 @@ body {
 .current-event-box {
   max-width: 90rem;
   margin-top: 4rem;
-  border: 0.2rem solid #d6d6d6;
+  border: 0.1rem solid #d6d6d6;
   border-radius: 7px;
   box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.18);
 }
@@ -174,8 +179,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #37475a;
-  color: white;
+  background-color: #febd69;
+  color: #232f3e;
   padding: 0.5rem 1rem;
   border-radius: 4px;
 }
@@ -192,12 +197,11 @@ body {
 }
 
 .event-title {
-  font-size: 2.2rem;
+  font-size: 2.3rem;
 }
 
 .event-place {
   display: block;
-  font-size: 2rem;
 }
 
 .event-loc {
@@ -229,5 +233,8 @@ body {
 }
 
 .event-img-box {
-  background-color: #37475a;
+  background-image: url("assets/davao-pubmat.png");
+  border-radius: 0 7px 7px 0;
+  background-size: cover;
+  background-color: #232f3f;
 }
