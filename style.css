@@ -82,17 +82,16 @@ body {
 
 .grid {
   display: grid;
-  column-gap: 6.4rem;
-  row-gap: 15rem;
-}
-
-.grid--1-cols {
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
 }
 
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
+  column-gap: 4rem;
+}
+
+.grid--3-cols {
+  /* KAPAG NADAGDAGAN NG PAST EVENTS */
+  grid-template-columns: repeat(3, 1fr);
 }
 
 /* NAVIGATION */
@@ -147,25 +146,30 @@ body {
   display: flex;
   gap: 1.5rem;
 }
+/* GENERAL EVENT STYLING*/
+.event-box {
+  border: 0.1rem solid #d6d6d6;
+  overflow: hidden;
+  box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.18);
+  border-radius: 8px;
+}
 
-/* CURRENT EVENTS */
+/* UPCOMING EVENTS */
 .section-current-events {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.current-event-box {
+.event-box.current {
   max-width: 90rem;
   margin-top: 4rem;
-  border: 0.1rem solid #d6d6d6;
-  border-radius: 7px;
-  box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.18);
 }
 
 .event-content-box {
   margin-left: 4.7rem;
 }
+
 .event-heading {
   display: flex;
   align-items: center;
@@ -196,7 +200,7 @@ body {
   text-transform: uppercase;
 }
 
-.event-title {
+.current.event-title {
   font-size: 2.3rem;
 }
 
@@ -232,9 +236,26 @@ body {
   margin: 3.8rem 0 4.6rem 0;
 }
 
-.event-img-box {
-  background-image: url("assets/davao-pubmat.png");
-  border-radius: 0 7px 7px 0;
-  background-size: cover;
-  background-color: #232f3f;
+.current-event-img {
+  width: 100%;
+}
+
+/* PAST EVENTS */
+.past-events {
+  padding: 0 17.4rem;
+}
+.past-event-img {
+  width: 100%;
+}
+.past.event-content-box {
+  margin-left: 0;
+  padding: 3.3rem 3rem;
+}
+
+.past.event-heading {
+  padding: 0 0 1.6rem 0;
+}
+
+.past.event-btn {
+  position: absolute;
 }
