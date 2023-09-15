@@ -272,3 +272,7 @@ body {
   right: 0;
   transform: translate(-9%, 120%);
 }
+
+.past.event-descrip {
+  font-size: 1.6rem;
+}
