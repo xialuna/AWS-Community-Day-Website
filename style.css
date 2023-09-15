@@ -26,9 +26,13 @@ body {
 .btn {
   text-decoration: none;
   display: inline-block;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: 5px;
   transition: all 0.3s;
+}
+
+.btn.pad-s {
+  padding: 0.7rem 1.1rem;
 }
 
 .btn.pad-l {
@@ -57,6 +61,7 @@ body {
 .btn-second:visited {
   background-color: #5c7695;
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.11);
+  font-weight: 600;
   color: white;
 }
 
@@ -242,10 +247,15 @@ body {
 
 /* PAST EVENTS */
 .past-events {
+  margin-top: 3rem;
   padding: 0 17.4rem;
 }
 .past-event-img {
   width: 100%;
+}
+
+.past.event-img-box {
+  position: relative;
 }
 .past.event-content-box {
   margin-left: 0;
@@ -258,4 +268,7 @@ body {
 
 .past.event-btn {
   position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(-9%, 120%);
 }
