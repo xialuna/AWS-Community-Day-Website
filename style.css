@@ -254,9 +254,6 @@ body {
   width: 100%;
 }
 
-.past.event-img-box {
-  position: relative;
-}
 .past.event-content-box {
   margin-left: 0;
   padding: 3.3rem 3rem;
@@ -266,13 +263,16 @@ body {
   padding: 0 0 1.6rem 0;
 }
 
-.past.event-btn {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  transform: translate(-9%, 120%);
+.past.event-content {
+  display: flex;
+  flex-direction: column;
 }
 
 .past.event-descrip {
   font-size: 1.6rem;
+}
+
+.past.event-btn {
+  align-self: flex-end;
+  margin: 0.5rem;
 }
