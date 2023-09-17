@@ -276,3 +276,83 @@ body {
   align-self: flex-end;
   margin: 0.5rem;
 }
+
+/* FOOTER */
+footer {
+  background-color: #37475a;
+  padding: 4.2rem 8.5rem 2.4rem 8.5rem;
+  margin-top: 15.8rem;
+  color: white;
+}
+.grid--footer {
+  grid-template-columns: 32fr 28fr 20fr 20fr;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 2rem;
+}
+.footer-descrip {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-col {
+  margin-bottom: 4rem;
+}
+.nav-col:nth-child(2) {
+  grid-column: 3 / span 1;
+}
+.nav-col:nth-child(3) {
+  grid-column: 4 / span 1; /* Occupy 30fr */
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.9rem;
+}
+
+.footer-heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 1rem 0 3.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: white;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #ffa400;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.social-icon {
+  height: 3.7rem;
+  width: 3.7rem;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 1.3rem;
+  padding-top: 2.4rem;
+  border-top: 1px solid white;
+}
