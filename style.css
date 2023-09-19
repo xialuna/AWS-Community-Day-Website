@@ -292,7 +292,7 @@ body {
 
 .past.event-btn {
   align-self: flex-end;
-  margin: 0.5rem;
+  margin: 1rem 1rem 0 0;
 }
 
 /* FOOTER */
@@ -373,4 +373,24 @@ footer {
   font-size: 1.3rem;
   padding-top: 2.4rem;
   border-top: 1px solid white;
+}
+
+/* MEDIA QUERIES */
+/* BELOW 1167px (Landscape Tablets) */
+@media (max-width: 73em) {
+  .past-events {
+    padding: 0 9.1rem;
+  }
+
+  .footer-descrip {
+    font-size: 1.4rem;
+  }
+
+  .grid--footer {
+    grid-template-columns: 3fr 1fr 2fr 2fr;
+    column-gap: 2rem;
+  }
+}
+/* BELOW 1000px (Tablets) */
+@media (max-width: 62.5em) {
 }
