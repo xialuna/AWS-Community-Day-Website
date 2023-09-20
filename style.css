@@ -182,6 +182,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 3rem;
 }
 
 .event-box.current {
