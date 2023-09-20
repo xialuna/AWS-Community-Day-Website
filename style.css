@@ -129,16 +129,18 @@ body {
 }
 
 /* HERO SECTION */
-.hero-section {
-  padding: 13rem 0 16rem 0;
-  background-image: url("assets/hero-bg-1.png");
+.section-hero {
+  min-height: 100vh;
+  padding-bottom: 16rem;
+  background-image: url("assets/hero-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #232f3f;
-  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
-.hero {
+.hero-content {
   max-width: 140rem;
   margin: 0 auto;
   padding: 0 3.2rem;
