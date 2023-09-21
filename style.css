@@ -191,7 +191,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.event-content-box {
+.current-content-box {
   margin: 0 4.5rem;
 }
 
@@ -276,7 +276,7 @@ body {
   width: 100%;
 }
 
-.past.event-content-box {
+.past-content-box {
   margin-left: 0;
   padding: 3.3rem 3rem;
 }
