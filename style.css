@@ -188,10 +188,11 @@ body {
 .event-box.current {
   max-width: 90rem;
   margin-top: 4rem;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .event-content-box {
-  margin-left: 4.7rem;
+  margin: 0 4.5rem;
 }
 
 .event-heading {
@@ -396,4 +397,16 @@ footer {
 }
 /* BELOW 1000px (Tablets) */
 @media (max-width: 62.5em) {
+  .event-box.current {
+    grid-template-columns: 1fr;
+    margin: 0 17.4rem;
+  }
+
+  .event-img-box {
+    grid-row: 1/2;
+  }
+
+  .current-event-img {
+    width: 100%;
+  }
 }
