@@ -24,7 +24,23 @@ allLinks.forEach(function (link) {
   });
 });
 
-/* UPDATE YEAR IN FOOTER */
+// UPDATE YEAR IN FOOTER
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
+
+// UPDATE IMAGE BASED ON SCREEN WIDTH
+function updateImageSource() {
+  const imgElement = document.getElementById("event-img");
+  if (window.matchMedia("(max-width: 62.5em)").matches) {
+    imgElement.src = "assets/davao-pubmat-min.png";
+  } else {
+    imgElement.src = "assets/davao-pubmat.png";
+  }
+}
+
+// Attach an event listener to detect changes in screen width
+window.addEventListener("resize", updateImageSource);
+
+// Call the function initially to set the correct image source
+updateImageSource();
