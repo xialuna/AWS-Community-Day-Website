@@ -400,6 +400,10 @@ footer {
 }
 /* BELOW 1000px (Tablets) */
 @media (max-width: 62.5em) {
+  .section-hero {
+    background-image: url("assets/hero-bg-portrait.png");
+  }
+
   .grid--1-col {
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   }
@@ -447,5 +451,12 @@ footer {
   }
   .nav-col:nth-child(3) {
     grid-row: 3 / span 1;
+  }
+}
+
+/* BELOW 704px (Smaller tablets) */
+@media (max-width: 44em) {
+  .section-hero {
+    background-image: url("assets/hero-bg-portrait.png");
   }
 }

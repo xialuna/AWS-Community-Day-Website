@@ -38,3 +38,9 @@ function updateImageSource() {
     imgElement.src = "assets/davao-pubmat.png";
   }
 }
+
+// Attach an event listener to detect changes in screen width
+window.addEventListener("resize", updateImageSource);
+
+// Call the function initially to set the correct image source
+updateImageSource();
