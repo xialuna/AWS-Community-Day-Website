@@ -404,6 +404,11 @@ footer {
     background-image: url("assets/hero-bg-portrait.png");
   }
 
+  .hero-content {
+    max-width: 75rem;
+    grid-template-columns: 1fr;
+  }
+
   .grid--1-col {
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   }
