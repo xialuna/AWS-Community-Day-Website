@@ -265,14 +265,6 @@ body {
   margin: 3.8rem 0 4.6rem 0;
 }
 
-/* .current-img-box {
-  background-image: url("assets/hero-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #232f3f;
-} */
-
 .current-event-img {
   width: 100%;
   height: 100%;
@@ -425,5 +417,35 @@ footer {
   }
   .past-events {
     padding: 0 17rem;
+  }
+
+  .footer-descrip,
+  .footer-heading {
+    display: none;
+  }
+
+  .grid--footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    justify-items: center;
+    row-gap: 2.5rem;
+  }
+
+  .footer-logo,
+  .nav-col {
+    margin-bottom: 0;
+  }
+
+  .nav-col:nth-child(2),
+  .nav-col:nth-child(3) {
+    grid-column: 1 / span 1;
+    text-align: center;
+  }
+
+  .nav-col:nth-child(2) {
+    grid-row: 2 / span 1;
+  }
+  .nav-col:nth-child(3) {
+    grid-row: 3 / span 1;
   }
 }
