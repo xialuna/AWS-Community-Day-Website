@@ -85,19 +85,14 @@ body {
   display: grid;
 }
 
-.grid--1-col {
+.grid-current {
   grid-template-columns: repeat(auto-fill, minmax(897px, 1fr));
 }
 
-.grid--2-cols {
+.grid-past {
   grid-template-columns: repeat(auto-fit, minmax(357px, 1fr));
   column-gap: 4rem;
   row-gap: 6rem;
-}
-
-.grid--3-cols {
-  /* KAPAG NADAGDAGAN NG PAST EVENTS */
-  grid-template-columns: repeat(3, 1fr);
 }
 
 .highlight {
@@ -178,6 +173,11 @@ body {
   border: 0.1rem solid #d6d6d6;
   overflow: hidden;
   border-radius: 8px;
+}
+
+.event-content {
+  display: flex;
+  flex-direction: column;
 }
 
 /* UPCOMING EVENTS */
@@ -263,6 +263,7 @@ body {
   font-size: 1.4rem;
   text-transform: uppercase;
   margin: 3.8rem 0 4.6rem 0;
+  align-self: flex-start;
 }
 
 .current-event-img {
@@ -286,11 +287,6 @@ body {
 
 .past.event-heading {
   padding: 0 0 1.6rem 0;
-}
-
-.past.event-content {
-  display: flex;
-  flex-direction: column;
 }
 
 .past.event-descrip {
@@ -400,6 +396,10 @@ footer {
 }
 /* BELOW 1000px (Tablets) */
 @media (max-width: 62.5em) {
+  html {
+    font-size: 50%; /* 8px / 16px = 0.5 = 50% */
+  }
+
   .section-hero {
     background-image: url("assets/hero-bg-portrait.png");
   }
@@ -409,8 +409,8 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .grid--1-col {
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  .grid-current {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
 
   .event-box.current {
@@ -424,6 +424,16 @@ footer {
   .current-events {
     padding: 0 15rem;
   }
+
+  .event-loc {
+    margin-bottom: 1.5rem;
+  }
+
+  .event-btn {
+    align-self: flex-end;
+    margin-top: 2rem;
+  }
+
   .past-events {
     padding: 0 17rem;
   }
@@ -461,7 +471,4 @@ footer {
 
 /* BELOW 704px (Smaller tablets) */
 @media (max-width: 44em) {
-  .section-hero {
-    background-image: url("assets/hero-bg-portrait.png");
-  }
 }
