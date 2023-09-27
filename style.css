@@ -118,11 +118,17 @@ body {
 
 /* NAVIGATION */
 .header {
-  height: 5.3rem;
+  height: 5.5rem;
   background-color: #232f3f;
   padding: 0 4rem;
   display: flex;
   align-items: center;
+  /* make it sticky */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 .company-logo {
