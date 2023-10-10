@@ -144,7 +144,7 @@ body {
   background-position: center;
   display: flex;
   justify-content: center;
-  padding-top: 6rem;
+  margin-top: 5.5rem;
 }
 .hero-content {
   max-width: 140rem;
